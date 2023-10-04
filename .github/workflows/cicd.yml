@@ -22,6 +22,3 @@ jobs:
       run: make format
     - name: Lint
       run: make lint
-
-    - name: Archive and Upload Artifacts
-      uses: actions/upload-artifact@v3
