@@ -24,8 +24,7 @@ jobs:
       run: make lint
     - name: run python script to create summary report
       run: python main.py
-    - name: run python script to create output graph
-      run : python test_graph.py
+
     - name: Archive and Upload Artifacts
       uses: actions/upload-artifact@v3
       with:
