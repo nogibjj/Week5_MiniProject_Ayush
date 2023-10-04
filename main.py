@@ -20,4 +20,3 @@ def main(query_string):
 
 if __name__ == "__main__":
     fire.Fire(main)
-
