@@ -1,6 +1,6 @@
 ## SQLite Lab
 
-![Query Executed](https://github.com/nogibjj/Week5_MiniProject_Ayush/lob/main/Query1.png)
+![Query Executed](https://github.com/nogibjj/Week5_MiniProject_Ayush/blob/main/Query1.png)
 
 
 
