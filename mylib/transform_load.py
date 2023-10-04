@@ -1,7 +1,7 @@
 """
 Transforms and Loads data into the local SQLite3 database
 Example:
-,general name,count_products,ingred_FPro,avg_FPro_products,avg_distance_root,ingred_normalization_term,semantic_tree_name,semantic_tree_node
+,general name,count_products
 """
 import sqlite3
 import csv
@@ -17,7 +17,10 @@ def load(dataset="/workspaces/Week5_MiniProject_Ayush/diabetes.csv"):
     conn = sqlite3.connect('diabetesDB.db')
     c = conn.cursor()
     c.execute("DROP TABLE IF EXISTS diabetesDB")
-    c.execute("CREATE TABLE diabetesDB (Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome)")
+    c.execute("CREATE TABLE diabetesDB ("
+          "Pregnancies,Glucose,BloodPressure,SkinThickness,"
+          "Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome)")
+
     #insert
     c.executemany("INSERT INTO diabetesDB VALUES (?,?, ?, ?, ?, ?, ?, ?, ?)", payload)
     conn.commit()
