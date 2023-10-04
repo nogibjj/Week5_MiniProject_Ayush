@@ -1,5 +1,5 @@
 ## SQLite Lab
-
+![Architecture](https://github.com/nogibjj/Week5_MiniProject_Ayush/blob/main/Project%20Architecture.png)
 This project uses SQLite to extract, transfer, load, and dynamically query a database through a command line interface tool via python fire. The data includes rankings of video games by name, producer, platform, year, user scores, and critic scores. This command line tool allows for quick SQL queries while employing SQLite's ability to host local databases. Because of SQLite's ability to handle very large data, this project is scalable to much larger datasets.
 
 Reflection
